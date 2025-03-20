@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "experimentalDecorators": true,
+    "useUnknownInCatchVariables": false,
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "target": "es5",
+    "lib": ["es7", "dom", "esnext"],
+    "jsx": "react",
+    "typeRoots": ["../../node_modules/@types"],
+    "types": ["jest", "bluebird-global"],
+    "paths": {
+      "botpress/shared": ["../../../../packages/ui-shared/src/typings.d.ts"],
+      "botpress/sdk": ["../../../../packages/bp/src/sdk/botpress.d.ts"],
+      "common/*": ["../../../../packages/bp/src/common/*"],
+      "@blueprintjs/core": ["../../../../packages/ui-shared/node_modules/@blueprintjs/core"],
+      "@blueprintjs/select": ["../../../../packages/ui-shared/node_modules/@blueprintjs/select"],
+      "react": ["../../../../packages/ui-shared/node_modules/@types/react"],
+      "react-dom": ["../../../../packages/ui-shared/node_modules/@types/react-dom"]
+    }
+  },
+  "exclude": ["**/*.test.ts"]
+}

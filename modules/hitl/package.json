@@ -1,0 +1,40 @@
+{
+  "name": "hitl",
+  "fullName": "Human In The Loop",
+  "version": "1.0.0",
+  "status": "stable",
+  "description": "Provides an interface for a Botpress user to take over conversations with chat users",
+  "private": true,
+  "main": "dist/backend/index.js",
+  "botpress": {
+    "src": "src",
+    "webBundle": "bin/web.bundle.js"
+  },
+  "keywords": [
+    "hitl",
+    "human in the loop",
+    "botpress"
+  ],
+  "scripts": {
+    "build": "node ../../build/module-builder/bin/entry build",
+    "watch": "node ../../build/module-builder/bin/entry watch",
+    "package": "node ../../build/module-builder/bin/entry package"
+  },
+  "author": "Botpress",
+  "license": "AGPL-3.0-only",
+  "devDependencies": {
+    "@types/react-bootstrap": "^0.32.19"
+  },
+  "dependencies": {
+    "@botpress/messaging-components": "0.1.0",
+    "bluebird": "^3.5.3",
+    "classnames": "^2.2.6",
+    "csstype": "^2.2.0",
+    "lodash": "^4.17.21",
+    "moment": "^2.24.0"
+  },
+  "resolutions": {
+    "fstream": ">=1.0.12",
+    "lodash": ">=4.17.21"
+  }
+}
