@@ -94,9 +94,15 @@ class RootStore {
   }
 
   @computed
+  get botId():string{
+    return this.config?.botId || 'dil123';
+  }
+
+  @computed
   get alwaysScrollDownOnMessages(): boolean {
     return this.botInfo.alwaysScrollDownOnMessages || false
   }
+
 
   @computed
   get isEmulator(): boolean {

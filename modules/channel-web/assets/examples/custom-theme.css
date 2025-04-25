@@ -42,7 +42,7 @@
 .bpw-bot-avatar img,
 .bpw-bot-avatar svg {
   border: none;
-  border-radius: 50%;
+  border-radius: 100%;
 }
 
 .bpw-composer {
@@ -52,7 +52,7 @@
 }
 
 .bpw-composer textarea {
-  background: #ececec;
+  background: #dd0202;
   border-radius: 20px;
   font-size: 1.25rem;
   overflow: hidden;
